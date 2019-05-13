@@ -1,0 +1,87 @@
+@font-face{
+	font-family: castletype_-_carismagothic-demibold-webfont;
+	src: url("castletype_-_carismagothic-demibold-webfont.ttf");
+}
+@font-face{
+	font-family: castletype_-_carismagothic-light-webfont;
+	src: url("castletype_-_carismagothic-light-webfont.ttf");
+}
+@font-face{
+	font-family: castletype_-_carismagothic-medium-webfont;
+	src: url("castletype_-_carismagothic-medium-webfont.ttf");
+}
+@font-face{
+	font-family: castletype_-_carismagothic-regular-webfont;
+	src: url("castletype_-_carismagothic-regular-webfont.ttf");
+}
+.slider {
+
+  width: 50vw;
+  height: 100vh;
+ 
+
+}
+.slide1,.slide2,.slide3,.slide4,.slide5 {
+  position: absolute;
+  width: 50vw;
+  height: 100vh;
+}
+.slide1 {
+  background: url('../img/bg-home.png');
+      background-size: cover;
+    animation:fade 8s infinite;
+-webkit-animation:fade 8s infinite;
+
+} 
+.slide2 {
+  background: url('../img/affordable.png');
+      background-size: cover;
+    animation:fade2 8s infinite;
+-webkit-animation:fade2 8s infinite;
+}
+.slide3 {
+    background: url('../img/durable.png');
+      background-size: cover;
+    animation:fade3 8s infinite;
+-webkit-animation:fade3 8s infinite;
+}
+@keyframes fade
+{
+  0%   {opacity:1}
+  33.333% { opacity: 0}
+  66.666% { opacity: 0}
+  100% { opacity: 1}
+}
+@keyframes fade2
+{
+  0%   {opacity:0}
+  33.333% { opacity: 1}
+  66.666% { opacity: 0 }
+  100% { opacity: 0}
+}
+@keyframes fade3
+{
+  0%   {opacity:0}
+  33.333% { opacity: 0}
+  66.666% { opacity: 1}
+  100% { opacity: 0}
+}
+.img-fluid{
+	background-image: url(../img/second-section.png);
+	max-width: 100%;
+}
+.module {
+  width: 100%;
+  height: 800px;
+  display: grid;
+  place-items: center;
+  color: white;
+  position: relative;
+  font: bold 42px sans-serif;
+  background-image:
+    linear-gradient(black, black),
+    url(../img/second-section.png);
+  background-size: cover;
+  background-blend-mode: saturation;
+  text-align: center;
+}
